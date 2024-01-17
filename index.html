@@ -15,7 +15,7 @@
         <div>
             <ul class="nav-links">
                 <li><a href="#about">Sobre Mim</a></li>
-                <li><a href="#experience">Experiência</a></li>
+                <li><a href="#experience">Experiências</a></li>
                 <li><a href="#projects">Projetos</a></li>
                 <li><a href="#contact">Contato</a></li>
             </ul>
@@ -25,14 +25,13 @@
     <nav id="hamburger-nav">
         <div class="logo">Ítalo Penha</div>
         <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div onclick="toggleMenu()">
+                <ion-icon name="menu-outline" class="hamburger-icon"></ion-icon>
+                <ion-icon name="close-outline" class="close-icon"></ion-icon>
             </div>
             <div class="menu-links">
                 <li><a href="#about" onclick="toggleMenu()">Sobre Mim</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experiência</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experiências</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
             </div>
@@ -44,173 +43,190 @@
             <img src="/assets/profile-pic.png" alt="Ítalo Penha">
         </div>
         <div class="section__text">
-            <p class="section__text__p1">Olá, eu sou o</p>
+            <p class="white__section__text__p1">Olá, eu sou o</p>
             <h1 class="title">Ítalo</h1>
-            <p class="section__text__p2">Desenvolvedor Backend</p>
+            <p class="white__section__text__p2">Desenvolvedor .NET</p>
             <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">Download
+                <button class="btn btn-color-2" onclick="window.open('./assets/italo-penha-cv.pdf')">Download
                     CV</button>
                 <button class="btn btn-color-1" onclick="location.href='./#contact'">Contato</button>
             </div>
             <div id="socials-container">
-                <a href="https://linkedin.com/in/italopenha" target="_blank" rel="noopener noreferrer"><img
-                        src="./assets/linkedin.png" alt="Linkedin" class="icon"></a>
-                <a href="https://github.com/italopenha" target="_blank" rel="noopener noreferrer"><img
-                        src="./assets/github.png" alt="Github" class="icon"></a>
+                <a href="https://linkedin.com/in/italopenha" target="_blank" rel="noopener noreferrer"><ion-icon
+                        name="logo-linkedin" class="icon"></ion-icon></a>
+                <a href="https://github.com/italopenha" target="_blank" rel="noopener noreferrer"><ion-icon
+                        name="logo-github" class="icon"></ion-icon></a>
             </div>
         </div>
     </section>
 
     <section id="about">
-        <p class="section__text__p1">Saiba mais</p>
+        <p class="blue__section__text__p1">Saiba mais</p>
         <h1 class="title">Sobre Mim</h1>
         <div class="section-container">
             <div class="section__pic-container">
-                <img src="./assets/about-pic.png" alt="Foto de perfil" class="about-pic">
+                <img src="./assets/about-pic.jpg" alt="Foto de perfil" class="about-pic">
             </div>
             <div class="about-details-container">
                 <div class="about-containers">
                     <div class="details-container">
-                        <img src="./assets/experience.png" alt="Ícone de experiência" class="icon">
-                        <h3>Experiência</h3>
-                        <p>2+ anos <br />Desenvolvimento Backend</p>
-                    </div>
-                    <div class="details-container">
-                        <img src="./assets/education.png" alt="Ícone de educação" class="icon">
+                        <ion-icon name="school-outline" class="icon"></ion-icon>
                         <h3>Educação</h3>
-                        <p>Univesp<br />Etec</p>
+                        <p class="about-text">Univesp | Bacharelado em Tecnologia da Informação | 07/2023 - Cursando
+                            <br> <br>Generation Brasil | Desenvolvedor .NET Júnior | 03/2022 - 06/2022
+                        </p>
                     </div>
                 </div>
                 <div class="text-container">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste consectetur laborum mollitia quas
-                        voluptate aut et a numquam aliquid porro voluptatibus quibusdam quisquam ab delectus debitis
-                        eaque cum libero eum, repellendus nesciunt quaerat hic odit eveniet reiciendis. Quod, odio eius,
-                        molestiae dolores magni sapiente non error impedit, magnam atque reprehenderit.</p>
+                    <p>Estudante de Tecnologia da Informação, fui introduzido a esse mundo ao participar do curso de
+                        Desenvolvedor .NET da Generation Brasil, onde conheci os fundamentos da programação. Criei em
+                        equipe um projeto para colocar em prática todos os conceitos vistos no curso.</p>
+                    <br>
+                    <p>Ingressei na faculdade de TI em julho de 2023, pretendo estagiar na área de desenvolvimento de
+                        software. Sou uma pessoa focada e objetiva, prezo pela organização e disciplina e assim busco
+                        atingir meus objetivos pessoais e profissionais.</p>
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="Ícone de seta" class="icon arrow" onclick="location.href='./#experience'">
     </section>
 
     <section id="experience">
-        <p class="section__text__p1">Explore minhas</p>
+        <p class="white__section__text__p1">Explore minhas</p>
         <h1 class="title">Experiências</h1>
         <div class="experience-details-container">
             <div class="about-containers">
                 <div class="details-container">
-                    <h2 class="experience-sub-title">Desenvolvimento Frontend</h2>
+                    <h2 class="experience-sub-title">Desenvolvimento Back-End</h2>
                     <div class="article-container">
                         <article>
-                            <img src="./assets/checkmark.png" alt="Ícone de experiência" class="icon">
+                            <img src="./assets/c-sharp-c.svg" alt="Ícone C#" class="icon">
                             <div>
-                                <h3>HTML</h3>
-                                <p>Experiência</p>
+                                <h3>C#</h3>
+                                <p>Intermediário</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Ícone de experiência" class="icon">
+                            <img src="./assets/logo_NETcore.svg" alt="Ícone .NET Core" class="icon">
                             <div>
-                                <h3>CSS</h3>
-                                <p>Experiência</p>
+                                <h3>.NET Core</h3>
+                                <p>Básico</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Ícone de experiência" class="icon">
+                            <img src="./assets/java-original-wordmark.svg" alt="Ícone Java" class="icon">
                             <div>
-                                <h3>JavaScript</h3>
-                                <p>Experiência</p>
+                                <h3>Java</h3>
+                                <p>Básico</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/mysql-original-wordmark.svg" alt="Ícone MySQL" class="icon">
+                            <div>
+                                <h3>MySQL</h3>
+                                <p>Básico</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/microsoft-sql-server-logo-svgrepo-com.svg" alt="Ícone SQL Server" class="icon">
+                            <div>
+                                <h3>SQL Server</h3>
+                                <p>Básico</p>
                             </div>
                         </article>
                     </div>
                 </div>
-
                 <div class="details-container">
-                    <h2 class="experience-sub-title">Desenvolvimento Backend</h2>
+                    <h2 class="experience-sub-title">Desenvolvimento Front-End</h2>
                     <div class="article-container">
                         <article>
-                            <img src="./assets/checkmark.png" alt="Ícone de experiência" class="icon">
+                            <img src="./assets/file-type-html.svg" alt="Ícone HTML" class="icon">
                             <div>
-                                <h3>C#</h3>
-                                <p>Experiência</p>
+                                <h3>HTML</h3>
+                                <p>Intermediário</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Ícone de experiência" class="icon">
+                            <img src="./assets/file-type-css.svg" alt="Ícone CSS" class="icon">
                             <div>
-                                <h3>MySQL</h3>
-                                <p>Experiência</p>
+                                <h3>CSS</h3>
+                                <p>Básico</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Ícone de experiência" class="icon">
+                            <img src="./assets/javascript-js.svg" alt="Ícone JavaScript" class="icon">
                             <div>
-                                <h3>Java</h3>
-                                <p>Experiência</p>
+                                <h3>JavaScript</h3>
+                                <p>Básico</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/react.svg" alt="Ícone React" class="icon">
+                            <div>
+                                <h3>React</h3>
+                                <p>Básico</p>
                             </div>
                         </article>
                     </div>
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="Ícone de seta" class="icon arrow" onclick="location.href='./#projects'">
     </section>
 
     <section id="projects">
-        <p class="section__text__p1">Navegue pelos meus recentes</p>
+        <p class="blue__section__text__p1">Navegue pelos meus recentes</p>
         <h1 class="title">Projetos</h1>
         <div class="experience-details-container">
             <div class="about-containers">
                 <div class="details-container color-container">
                     <div class="article-container">
-                        <img src="./assets/project-1.png" alt="Projeto 1" class="project-img">
+                        <img src="./assets/easy-food.png" alt="Easy Food" class="project-img">
                     </div>
-                    <h2 class="experience-sub-title project-title">Projeto 1</h2>
+                    <h2 class="experience-sub-title project-title">Easy Food</h2>
                     <div class="btn-container">
-                        <a href="http://github.com/italopenha" target="_blank" rel="noopener noreferrer"><button
-                                class="btn btn-color-2 project-btn">GitHub</button></a>
-                        <a href="http://github.com/italopenha" target="_blank" rel="noopener noreferrer"><button
+                        <a href="https://github.com/grillogui/ProjetoIntegrador" target="_blank" rel="noopener noreferrer"><button
+                                class="btn btn-color-2 project-btn">Código Fonte Back-End</button></a>
+                        <a href="https://github.com/italopenha/ProjetoIntegradorReact" target="_blank" rel="noopener noreferrer"><button
+                                class="btn btn-color-2 project-btn">Código Fonte Front-End</button></a>
+                        <a href="https://easyfood-one.vercel.app/home" target="_blank" rel="noopener noreferrer"><button
                                 class="btn btn-color-2 project-btn">Demo</button></a>
                     </div>
                 </div>
                 <div class="details-container color-container">
                     <div class="article-container">
-                        <img src="./assets/project-2.png" alt="Projeto 2" class="project-img">
+                        <img src="./assets/schedule-control-api.png" alt="Schedule Control" class="project-img">
                     </div>
-                    <h2 class="experience-sub-title project-title">Projeto 2</h2>
+                    <h2 class="experience-sub-title project-title">Schedule Control API</h2>
                     <div class="btn-container">
-                        <a href="http://github.com/italopenha" target="_blank" rel="noopener noreferrer"><button
-                                class="btn btn-color-2 project-btn">GitHub</button></a>
-                        <a href="http://github.com/italopenha" target="_blank" rel="noopener noreferrer"><button
-                                class="btn btn-color-2 project-btn">Demo</button></a>
+                        <a href="https://github.com/italopenha/ScheduleControlAPI" target="_blank" rel="noopener noreferrer"><button
+                                class="btn btn-color-2 project-btn">Código Fonte Back-End</button></a>
                     </div>
                 </div>
                 <div class="details-container color-container">
                     <div class="article-container">
-                        <img src="./assets/project-3.png" alt="Projeto 3" class="project-img">
+                        <img src="./assets/jogos-favoritos.png" alt="Projeto 3" class="project-img">
                     </div>
-                    <h2 class="experience-sub-title project-title">Projeto 3</h2>
+                    <h2 class="experience-sub-title project-title">Jogos Favoritos</h2>
                     <div class="btn-container">
-                        <a href="http://github.com/italopenha" target="_blank" rel="noopener noreferrer"><button
-                                class="btn btn-color-2 project-btn">GitHub</button></a>
-                        <a href="http://github.com/italopenha" target="_blank" rel="noopener noreferrer"><button
+                        <a href="https://github.com/italopenha/projeto-jogos" target="_blank" rel="noopener noreferrer"><button
+                                class="btn btn-color-2 project-btn">Código Fonte Front-End</button></a>
+                        <a href="https://italopenha.github.io/projeto-jogos/" target="_blank" rel="noopener noreferrer"><button
                                 class="btn btn-color-2 project-btn">Demo</button></a>
                     </div>
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="Ícone de seta" class="icon arrow" onclick="location.href='./#contact'">
     </section>
 
     <section id="contact">
-        <p class="section__text__p1">Entre em</p>
+        <p class="white__section__text__p1">Entre em</p>
         <h1 class="title">Contato</h1>
         <div class="contact-info-upper-container">
             <div class="contact-info-container">
-                <img src="./assets/email.png" alt="Ícone de e-mail" class="icon contact-icon email-icon">
-                <p><a href="mailto:example@gmail.com">example@gmail.com</a></p>
+                <ion-icon name="mail-outline" class="icon"></ion-icon>
+                <p><a href="mailto:italopenha77@outlook.com">italopenha77@outlook.com</a></p>
             </div>
             <div class="contact-info-container">
-                <img src="./assets/linkedin.png" alt="Ícone Linkedin" class="icon contact-icon">
+                <ion-icon name="logo-linkedin" class="icon"></ion-icon>
                 <p><a href="https://linkedin.com/in/italopenha" target="_blank">LinkedIn</a></p>
             </div>
         </div>
@@ -221,7 +237,7 @@
             <div class="nav-links-container">
                 <ul class="nav-links">
                     <li><a href="#about">Sobre Mim</a></li>
-                    <li><a href="#experience">Experiência</a></li>
+                    <li><a href="#experience">Experiências</a></li>
                     <li><a href="#projects">Projetos</a></li>
                     <li><a href="#contact">Contato</a></li>
                 </ul>
@@ -230,6 +246,8 @@
     </footer>
 
     <script src="/js/main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
